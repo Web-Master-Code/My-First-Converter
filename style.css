@@ -23,7 +23,7 @@ body{
     z-index: 98;
 }
 
-#setValue{
+.con-style input{
     text-align: center;
     width: 250px;
     height: 35px;
@@ -33,13 +33,13 @@ body{
     color: #333;
 }
 
-#setValue::placeholder{
+.con-style input::placeholder{
     font-size: 14px;
 }
 
 .convert-btn{
     text-align: center;
-    width: 120px;
+    width: 140px;
     height: 35px;
     border: 2px solid green;
     border-radius: 5px;
@@ -58,6 +58,15 @@ body{
 .convert-btn:active{
     margin-top: 5px;
     margin-left: 5px;
+}
+
+.prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 280px;
+    gap: 10px;
 }
 
 .text-box-style{

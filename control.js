@@ -1,18 +1,38 @@
-let SYR = document.getElementById('setValue');
-let USD = document.getElementById('textBox');
-let alertBox = document.getElementById('alertBox');
-let result = 1;
+let SYR = document.getElementById('textBoxSYR');
+let USD = document.getElementById('setValueUSD');
+let worngAlert = document.getElementById('wrongAlert');
+let UsdResult = 1;
 
-function setValue(){
-    result = SYR.value * 14700;
-    return result;
-}
-
-function convert(){
-    USD.innerHTML = setValue();
+function converter(){
+    UsdResult = USD.value * 14700;
+    SYR.innerHTML = UsdResult;
 }
 
 function clearBoxes(){
-    SYR.value = '';
-    USD.innerHTML = 'USD $';
+    SYR.innerHTML = 'SYR';
+    USD.value = '';
+}
+
+function wrong(){
+    if(USD.value == ''){
+        worngAlert.style.cssText = `
+            z-index: 99;
+            width: 260px;
+            height: 40vh;
+            opacity: 1;
+        `
+    }
+    else{
+        converter();
+    }
+
+}
+
+function okBtn(){
+    worngAlert.style.cssText = `
+    z-index: 97;
+    width: 0px;
+    height: 0vh;
+    opacity: 0;
+`
 }

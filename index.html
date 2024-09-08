@@ -12,10 +12,21 @@
 
         <div class="con-style">
 
-            <input type="text" id="setValue" value="" placeholder="Enter S.Y.R" inputmode="numeric">
-            <button class="convert-btn" onclick="setValue(); convert()">Convert to $</button>
-            <div id="textBox" class="text-box-style">USD $</div>
+            <input type="text" id="setValueUSD" value="" placeholder="Enter USD" inputmode="numeric">
+            <button class="convert-btn" onclick="wrong()">Convert to SYR</button>
+            <div id="textBoxSYR" class="text-box-style">SYR</div>
             <button class="clear-btn" onclick="clearBoxes();">Clear</button>
+
+        </div>
+
+    </div>
+
+    <div class="alert">
+
+        <div class="alert-style" id="wrongAlert">
+
+            <div>You can not convert without any value</div>
+            <button onclick="okBtn();">Ok</button>
 
         </div>
 

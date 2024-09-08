@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.con{
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.con-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    height: 60vh;
+    background-color: #333;
+    color: #FFF;
+    border-radius: 15px;
+    z-index: 98;
+}
+
+#setValue{
+    text-align: center;
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #333;
+}
+
+#setValue::placeholder{
+    font-size: 14px;
+}
+
+.convert-btn{
+    text-align: center;
+    width: 120px;
+    height: 35px;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: green;
+    color: #FFF;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.convert-btn:hover{
+    background-color: white;
+    color: green;
+}
+
+.convert-btn:active{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.text-box-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: 35px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #333;
+}
+
+.clear-btn{
+    text-align: center;
+    width: 100px;
+    height: 32px;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.clear-btn:hover{
+    background-color: #333;
+    color: #FFF;
+}
+
+.clear-btn:active{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.alert{
+    display: flex;
+    justify-content: center;
+    margin-top: -50vh;
+}
+
+.alert-style{
+    position: fixed;
+    z-index: 97;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 0px;
+    height: 0vh;
+    padding: 0 30px;
+    background-color: white;
+    color: red;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px 5px rgb(0, 0, 0, 0.2);
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.alert-style button{
+    text-align: center;
+    width: 100px;
+    height: 32px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s;
+}
